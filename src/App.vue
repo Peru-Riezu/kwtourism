@@ -20,7 +20,7 @@
 			alt: 'A wide landscape view of Kerewandemba.',
 			description: 'Kerewandemba is a small town in The Gambia, about 180 kilometers (110 miles) from Banjul Airport.'
 				+ ' It is surrounded by beautiful wildlife, striking scenery, rich traditions, and ingenious people who provide'
-				+ ' for themselves in a less industrial, more traditional way. At KW ECO Tourism, it is our pleasure to help'
+				+ ' for themselves in a less industrial, more traditional way. At KWTourism, it is our pleasure to help'
 				+ ' visitors experience this beautiful nature and culture.',
 			fit: 'cover',
 		},
@@ -289,12 +289,12 @@
 		:class="{ 'carousel-app--ready': isReady }"
 	>
 		<div class="floating-brand">
-			KWTurisim
+			KWTourism
 		</div>
 
 		<section
 			class="carousel"
-			aria-label="KWTurisim scroll carousel"
+			aria-label="KWTourism scroll carousel"
 		>
 			<article
 				v-for="(slide, index) in slides"
