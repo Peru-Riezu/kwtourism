@@ -16,17 +16,17 @@
 	const slides: readonly Slide[] = [
 		{
 			title: 'Kerewandemba',
-			image: '/images/paysage1.jpg',
+			image: '/images/paysage1.webp',
 			alt: 'A wide landscape view of Kerewandemba.',
-			description: 'Kerewandemba is a small town in The Gambia, about 180 kilometers (110 miles) from Banjul Airport.'
+			description: 'Kerewandemba is a small town in The Gambia, about 180 kilometers (110 miles) from the Banjul Airport.'
 				+ ' It is surrounded by beautiful wildlife, striking scenery, rich traditions, and ingenious people who provide'
-				+ ' for themselves in a less industrial, more traditional way. At KWTourism, it is our pleasure to help'
+				+ ' for themselves in a less industrial, more traditional way. At Kerewandemba ECO Tourism, it is our pleasure to help'
 				+ ' visitors experience this beautiful nature and culture.',
 			fit: 'cover',
 		},
 		{
 			title: 'Cuisine',
-			image: '/images/food1.jpg',
+			image: '/images/food1.webp',
 			alt: 'Traditional food prepared for visitors.',
 			description: 'The land of The Gambia provides its people with a rich variety of ingredients. After setting aside what'
 				+ ' their religion may forbid, they combine those ingredients using techniques passed down through generations,'
@@ -37,7 +37,7 @@
 		},
 		{
 			title: 'Scenery',
-			image: '/images/road_and_birds.jpg',
+			image: '/images/road_and_birds.webp',
 			alt: 'A road cutting through the landscape with birds nearby.',
 			description: 'The area surrounding Kerewandemba is wonderfully diverse, from the lush forests around the Gambia River to'
 				+ ' the marshlands and savanna. It is a place filled with mesmerizing baobab trees, along with countless'
@@ -46,7 +46,7 @@
 		},
 		{
 			title: 'Birding',
-			image: '/images/birdwatching2.jpg',
+			image: '/images/birdwatching2.webp',
 			alt: 'A bird seen near the river.',
 			description: 'Many beautiful birds can be spotted in the area around Kerewandemba. From birdsong to brilliant colors,'
 				+ ' birding in The Gambia can be a truly joyful experience.',
@@ -54,15 +54,15 @@
 		},
 		{
 			title: 'Wildlife',
-			image: '/images/lurking_chimp.jpg',
+			image: '/images/lurking_chimp.webp',
 			alt: 'A chimpanzee partially hidden in the vegetation.',
 			fit: 'cover',
 			description: 'The Gambia River is surrounded by remarkable wildlife that lives in the lush forest. Experiencing the'
-				+ ' magical moment of spotting this wildlife is a privilege that stays with you for life.',
+				+ ' magical moment of spotting this wildlife is a privilege that stays with one for life.',
 		},
 		{
 			title: 'Sustainable Materials',
-			image: '/images/cattail2.jpg',
+			image: '/images/cattail2.webp',
 			alt: 'Natural material gathered for traditional crafts.',
 			description: 'All the tools and utensils that make life easier and more comfortable must be made from some kind of material.'
 				+ ' Today, many non-natural materials are used in Kerewandemba, but the crafts of turning what nature provides into'
@@ -71,9 +71,9 @@
 		},
 		{
 			title: 'Traditional Building',
-			image: '/images/hut.png',
+			image: '/images/hut.webp',
 			alt: 'A traditional hut used for village life and demonstrations.',
-			description: 'A little dust from the ground, a little water from the well, some time, and wood for fuel, and before long'
+			description: 'A little dust from the ground, a little water from the well, time, and wood for fuel, and before long'
 				+ ' a place to live begins to appear.',
 			fit: 'cover',
 		},
@@ -90,16 +90,16 @@
 		},
 		{
 			title: 'Animal Husbandry',
-			image: '/images/donkeys.jpg',
+			image: '/images/donkeys.webp',
 			alt: 'Donkeys standing in an open field.',
 			description: 'Animal husbandry is an important part of the economy of the peoples of The Gambia. In Kerewandemba, you can'
 				+ ' learn about the herding practices of settled households and of nomadic pastoralists who at times move through'
-				+ ' the area in rivers of cattle.',
+				+ ' the area their rivers of cattle.',
 			fit: 'cover',
 		},
 		{
 			title: 'Meet Your Host',
-			image: '/images/host.jpg',
+			image: '/images/host.webp',
 			alt: 'Portrait of the local host.',
 			description: 'Hello, my name is Beakery Leigh, and it will be my pleasure to host you here and introduce you to the'
 				+ ' many wonders Kerewandemba has to offer. Besides hosting visitors, I also cultivate rice and grow tree'
@@ -109,12 +109,12 @@
 		},
 		{
 			title: 'Venture On',
-			image: '/images/marshlands.jpg',
+			image: '/images/marshlands.webp',
 			alt: 'Open marshlands at the edge of the village.',
 			description: 'Has any of this caught your attention? Contact me on WhatsApp at +220 702 6904. I do not always have'
 				+ ' internet connectivity, so it may take me a few days to respond, but some good things take a little time.'
 				+ ' Tell me which activities interest you most, when you intend to come, and how long you would like to stay.'
-				+ ' Then I can let you know whether there is another group visiting around that time that you could join, and'
+				+ ' Then I can let you know whether there is another group visiting around that time that you could merge with, and'
 				+ ' whether the season is well suited to the activities you want to do. Keep in mind that the dry season in'
 				+ ' The Gambia runs from November to May or June, and many people find that the most enjoyable time to visit.',
 			fit: 'cover',
