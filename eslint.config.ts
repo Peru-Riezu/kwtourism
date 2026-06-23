@@ -27,7 +27,8 @@ export default defineConfig
 			"brace-style": ["error", "allman"],
 			"curly": ["error", "all"],
 			"no-multiple-empty-lines": ["error", { max: 1, maxBOF: 0, maxEOF: 1 }],
-			"no-unexpected-multiline": "off"
+			"no-unexpected-multiline": "off",
+			'no-undef': 'off'
 		}
 	},
 

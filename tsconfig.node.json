@@ -14,10 +14,9 @@
 	"strict": true,
 	"noImplicitAny": true,
 	"strictPropertyInitialization": true,
-
     "module": "ESNext",
     "moduleResolution": "Bundler",
-    "types": ["node"]
-
+    "types": ["node"],
+    "lib": ["ESNext", "DOM"]
   }
 }

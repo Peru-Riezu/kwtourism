@@ -6,7 +6,8 @@
 		"moduleResolution": "Bundler",
 		"strict": true,
 		"noImplicitAny": true,
-		"strictPropertyInitialization": true
+		"strictPropertyInitialization": true,
+		"lib": ["ESNext", "DOM"]
 	},
   "references": [
     {
