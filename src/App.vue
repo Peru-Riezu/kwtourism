@@ -113,8 +113,6 @@
 			}
 		];
 
-	let activeSlide : Element | null = null;
-
 	function createCarrousel() : void
 	{
 		for (let i : number = 0; i < carrouselData.length; i++)
@@ -170,66 +168,9 @@
 
 			carrouselElement.value!.appendChild(newSlide);
 		}
-		activeSlide = document.getElementById("slide1");
 	}
 
-	async function onCarrouselScrollEnd() : Promise<void>
-	{
-		let closestSlideIndex : number | null = null;
-		let closestDistance : number | null = null;
-		for (let i : number = 0; i < carrouselElement.value!.children.length; i++)
-		{
-			const slide : HTMLElement = carrouselElement.value!.children[i] as HTMLElement;
-			const distance : number = Math.abs(slide.offsetTop - carrouselElement.value!.scrollTop);
-
-			if (closestDistance == null || distance < closestDistance)
-			{
-				closestDistance = distance;
-				closestSlideIndex = i;
-			}
-		}
-
-		const closestSlide : HTMLElement = carrouselElement.value!.children[closestSlideIndex!]! as HTMLElement;
-
-		if (closestSlide == activeSlide)
-		{
-			console.log("closestSlide offsetTop = " + closestSlide!.offsetTop);
-			console.log("carrouselElement scrollTop = " + carrouselElement.value!.scrollTop);
-			if (closestSlide!.offsetTop > Math.round(carrouselElement.value!.scrollTop) && closestSlideIndex != 0)
-			{
-				activeSlide = carrouselElement.value!.children[closestSlideIndex! - 1] as HTMLElement;
-			}
-			else if
-				(
-					closestSlide!.offsetTop < Math.round(carrouselElement.value!.scrollTop)
-					&&
-					closestSlideIndex! != carrouselElement.value!.children.length - 1
-				)
-			{
-				activeSlide = carrouselElement.value!.children[closestSlideIndex! + 1] as HTMLElement;
-			}
-			else
-			{
-				return;
-			}
-		}
-		else
-		{
-			activeSlide = closestSlide;
-		}
-
-		const scrollIntoViewOptions : ScrollIntoViewOptions = {behavior: "smooth"};
-
-		activeSlide!.scrollIntoView(scrollIntoViewOptions);
-	}
-
-	function createAndSetUpCarrousel() : void
-	{
-		createCarrousel();
-		carrouselElement.value!.addEventListener("scrollend", onCarrouselScrollEnd);
-	}
-
-	onMounted(createAndSetUpCarrousel);
+	onMounted(createCarrousel);
 </script>
 
 <template>
@@ -271,6 +212,8 @@
 		overflow-x: auto;
 		display: flex;
 		flex-direction: column;
+		scroll-behavior: smooth;
+		scroll-snap-type: y mandatory;
 	}
 
 	.slide
@@ -279,6 +222,8 @@
 		width: 100%;
 		position: relative;
 		flex-shrink: 0;
+		scroll-snap-align: start;
+		scroll-snap-stop: always;
 	}
 
 	.BackgroundImage
